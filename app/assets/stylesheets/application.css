@@ -1,0 +1,144 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+	font-family: 'neo';
+	color: white;
+	margin: 0;
+	width: 100%;
+	padding: 0px;
+	font-size:30px;
+	text-align: center;
+	background:
+-webkit-linear-gradient(207deg, #151515 5px, transparent 5px) 0 5px,
+-webkit-linear-gradient(27deg, #151515 5px, transparent 5px) 10px 0px,
+-webkit-linear-gradient(207deg, #222 5px, transparent 5px) 0px 10px,
+-webkit-linear-gradient(27deg, #222 5px, transparent 5px) 10px 5px,
+-webkit-linear-gradient(left, #1b1b1b 10px, transparent 10px),
+-webkit-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background:
+-o-linear-gradient(207deg, #151515 5px, transparent 5px) 0 5px,
+-o-linear-gradient(27deg, #151515 5px, transparent 5px) 10px 0px,
+-o-linear-gradient(207deg, #222 5px, transparent 5px) 0px 10px,
+-o-linear-gradient(27deg, #222 5px, transparent 5px) 10px 5px,
+-o-linear-gradient(left, #1b1b1b 10px, transparent 10px),
+-o-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background:
+linear-gradient(297deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(117deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(297deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(117deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(to right, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);;;
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+p {
+	font-family: 'arial';
+	color: white;
+	font-size: 20px;
+}
+
+a:hover { 
+    color: #2AFAFA;
+}
+
+a {
+	color: white;
+}
+
+#formbox {
+	color: white;
+	background-color: none;
+	outline: white solid;
+	width: 30%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#showbox {
+	color: white;
+	background-color: none;
+	outline: white solid;
+	width: 30%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+ 
+
+#field {
+	font-family: 'anne';
+}
+
+#notice {
+	font-family: 'anne';
+}
+
+table {
+	font-family: 'neo';
+	color: white;
+	padding: 30px;
+	font-size: 20px;
+	font-size: 20px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	border: 1px solid white;
+}
+
+table, th, td {
+    border: 1px solid #C1D5DB;
+    border-collapse: collapse;
+    font-size: 14px;
+    padding: 2px;
+    padding-left: 5px;
+
+}
+
+#actions {
+	 font-family: 'neobold';
+}
+
+html {
+	height: 500px;
+}
+
+@font-face {
+    font-family: 'anne';
+    src: url(anne.ttf);
+}
+
+@font-face {
+	font-family: 'disco';
+	src: url(disco.ttf);
+}
+
+@font-face {
+    font-family: 'neobold';
+    src: url(neobold.ttf);}
+
+
+@font-face {
+    font-family: 'neo';
+    src: url(neo.ttf);}
+
+
