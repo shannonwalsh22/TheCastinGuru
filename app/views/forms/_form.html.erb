@@ -15,7 +15,14 @@
 <div id="formbox">
   <div class="field">
     <%= f.label :project %><br>
-    <%= f.text_field :project %>
+      <select name="forms[project]">
+      <option value="Tylenol">Tylenol</option>
+      <option value="AMFAM" selected="selected">AMFAM</option>
+      <option value="Nationwide">Nationwide</option>
+      <option value="Home Goods">Home Goods</option>
+      <option value="Gerber">Gerber</option>
+</select>
+
   </div>
   <div class="field">
     <%= f.label :first_name %><br>
