@@ -13,6 +13,10 @@ class FormsController < ApplicationController
   def show
   end
 
+  def project
+    @forms = Form.where(project: params[:project])
+  end
+
   # GET /forms/new
   def new
     @form = Form.new
