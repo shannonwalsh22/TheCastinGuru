@@ -1,3 +1,6 @@
+<h1>List of Selects</h1>
+
+<br><br><br><br>
 <table>
   <thead>
     <tr>
@@ -7,6 +10,7 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Union</th>
+      <th>Avatar</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +24,7 @@
         <td><%= form.email %></td>
         <td><%= form.phone %></td>
         <td><%= form.union %></td>
+         <td><%= image_tag form.image.url(:thumb) %></td>
         <td><%= link_to 'Show', form %></td>
         <td><%= link_to 'Edit', edit_form_path(form) %></td>
         <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +32,7 @@
     <% end %>
   </tbody>
 </table>
+
+<br><br><br>
+<%= link_to 'Back', forms_path %>
+<br><br><br><br><br><br>

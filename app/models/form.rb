@@ -1,9 +1,15 @@
 class Form < ActiveRecord::Base
-	 validates_presence_of :project, :phone, :first_name, :last_name, :email, :phone
+	validates_presence_of :project, :phone, :first_name, :last_name, :email, :phone, :image
 
-	 #has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png" validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
-	 #validates_attachment :image, :size => { :in => 0..100.kilobytes }
+ 	has_attached_file :image, 
+						:path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+					  :url => "/system/:attachment/:id/:style/:filename", 
+					  :styles => { :medium => "300x300>", :thumb => "100x100>" }
+ 	validates_attachment :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
+ 	# attr_accessor :image_file_name
+	#validates :avatar, :attachment_presence => true
+	
 
 
 

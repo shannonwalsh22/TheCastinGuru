@@ -30,7 +30,6 @@ class FormsController < ApplicationController
   # POST /forms.json
   def create
     @form = Form.new(form_params)
-
     respond_to do |format|
       if @form.save
         format.html { redirect_to @form, notice: 'Form was successfully created.' }
@@ -74,13 +73,12 @@ class FormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def form_params
-      params.require(:form).permit(:project, :first_name, :last_name, :email, :phone, :union)
+      params.require(:form).permit(:project, :first_name, :last_name, :email, :phone, :union, :image)
     end
 
-  #private
-  #def authenticate
-   # authenticate_or_request_with_http_basic do |name, password|
-    #  name == "admin" && password == "secret"
-    #end
-  #end
+  private
+    def user_params
+      params.require(:user).permit(:name, :image, :resume)
+    end
+ 
 end

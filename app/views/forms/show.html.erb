@@ -31,7 +31,17 @@
   <strong>Union:</strong>
   <%= @form.union %>
 </p>
+
+<p>
+<strong>Avatar:</strong>
+<%= link_to image_tag(@form.image.url(:thumb)), @form.image.url %>
+</p>
+
 </div>
+<br><br><br>
 
 <%= link_to 'Edit', edit_form_path(@form) %> |
 <%= link_to 'Back', forms_path %>
+
+<br><br><br><br><br><br>
+

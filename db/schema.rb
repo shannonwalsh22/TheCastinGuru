@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151111204927) do
+ActiveRecord::Schema.define(version: 20151112224936) do
 
   create_table "forms", force: :cascade do |t|
     t.string   "project"
@@ -20,8 +20,12 @@ ActiveRecord::Schema.define(version: 20151111204927) do
     t.string   "email"
     t.string   "phone"
     t.boolean  "union"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end
